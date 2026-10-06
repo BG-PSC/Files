@@ -3,8 +3,8 @@ from PIL import Image, ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # Ścieżki absolutne (zmień na swoje!)
-input_folder = r"Z:\roboty\STABILIZACJA\S19\zdjęcia Sławek\S19_IWONICZ-ZDJ+ZES_UZUPELNIENIA\zlaczone"
-output_folder = r"D:\Python\kuba\web_map\Files\pliki\graniczniki\S19"
+input_folder = r"Z:\roboty\STABILIZACJA\Suez\Augustów\ZDJĘCIA\ZDJECIA"
+output_folder = r"D:\Python\kuba\web_map\Files\pliki\graniczniki\augustow"
 
 # Utwórz folder wyjściowy, jeśli nie istnieje
 os.makedirs(output_folder, exist_ok=True)
