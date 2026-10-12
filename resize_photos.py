@@ -1,9 +1,9 @@
 import os
-from PIL import Image, ImageFile
+from PIL import Image, ImageFile, ImageOps
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # Ścieżki absolutne (zmień na swoje!)
-input_folder = r"Z:\roboty\STABILIZACJA\Suez\Augustów\ZDJĘCIA\ZDJECIA"
+input_folder = r"Z:\roboty\STABILIZACJA\Suez\Augustów\ZDJĘCIA\ZDJECIA\12.10.26"
 output_folder = r"D:\Python\kuba\web_map\Files\pliki\graniczniki\augustow"
 
 # Utwórz folder wyjściowy, jeśli nie istnieje
@@ -23,6 +23,7 @@ for filename in os.listdir(input_folder):
             continue
 
         with Image.open(input_path) as img:
+            img = ImageOps.exif_transpose(img)
             width, height = img.size
 
             # Skalowanie z zachowaniem proporcji
