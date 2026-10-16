@@ -3,7 +3,7 @@ from PIL import Image, ImageFile, ImageOps
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # Ścieżki absolutne (zmień na swoje!)
-input_folder = r"Z:\roboty\STABILIZACJA\Suez\Augustów\ZDJĘCIA\ZDJECIA\12.10.26"
+input_folder = r"Z:\roboty\STABILIZACJA\Suez\Augustów\ZDJĘCIA\ZDJECIA\15.10.26"
 output_folder = r"D:\Python\kuba\web_map\Files\pliki\graniczniki\augustow"
 
 # Utwórz folder wyjściowy, jeśli nie istnieje
